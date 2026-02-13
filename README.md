@@ -15,7 +15,7 @@ Po zapnutí zařízení se ukáže "Connecting to WiFi", po připojení k síti 
 Zařiďte základní robustnost programu jako automatické připojení k síti po výpadku, či upozornění na špatná data z API. 
 
 ### Úprava programu
-Pomocí funkce fork na GitHub přidejte do kódu vaší dvojice funkcionalitu aktuálního času, na displej přidejte aktuální čas v sekundách synchronizovaného pomocí NTP, případně uvolněte pro tento údaj místo na displeji, poté využijte funkci contribute pro aktualizování repozitáře autora. Ověřte funkčnost.
+Pomocí funkce fork na GitHub přidejte do kódu vaší dvojice funkcionalitu aktuálního času, na displej přidejte aktuální čas formátovaný HH:MM:SS synchronizovaného pomocí NTP, případně uvolněte pro tento údaj místo na displeji, poté využijte funkci contribute pro aktualizování repozitáře autora. Ověřte funkčnost.
 
 ### Hodnocení
 Bude hodnoceno za 5 pouze při neplnění činosti na hodínách Dpr.
