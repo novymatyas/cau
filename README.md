@@ -1,4 +1,4 @@
-**Weather Station – Raspberry Pi Pico W**
+###### **Weather Station – Raspberry Pi Pico W**
 
 
 
@@ -6,7 +6,7 @@ Tento projekt je určen pro Raspberry Pi Pico W a jeho úkolem je zobrazovat akt
 
 
 
-**Hardware**
+###### **Hardware**
 
 
 
@@ -14,7 +14,7 @@ Projekt využívá Raspberry Pi Pico W, LCD displej, USB kabel a připojení k W
 
 
 
-**Zapojení LCD**
+###### **Zapojení LCD**
 
 
 
@@ -22,7 +22,7 @@ LCD displej je připojen k Pico W tak, aby bylo možné zobrazovat informace o p
 
 
 
-**Instalace a spuštění**
+###### **Instalace a spuštění**
 
 
 
@@ -34,7 +34,7 @@ Po vložení konfiguračního souboru a nahrání programu do Raspberry Pi Pico 
 
 
 
-**Funkce programu**
+###### **Funkce programu**
 
 
 
@@ -46,7 +46,7 @@ Program je navržen tak, aby se automaticky znovu připojil k WiFi v případě 
 
 
 
-**Rozšíření – Fork úkol**
+###### **Rozšíření – Fork úkol**
 
 
 
@@ -54,7 +54,7 @@ Projekt byl rozšířen o zobrazení aktuálního času synchronizovaného přes
 
 
 
-**Struktura projektu**
+###### **Struktura projektu**
 
 
 
@@ -62,7 +62,7 @@ Hlavní soubor programu je main.py. Konfigurační údaje se ukládají do soubo
 
 
 
-**Bezpečnost**
+###### **Bezpečnost**
 
 
 
