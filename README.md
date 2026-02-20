@@ -1,36 +1,22 @@
-# Práce s Git a GitHub
-## Zadání práce
-Tento repozitář si zkopírujte do svého počítače, bude sloužit jako základ projektu. 
-Vytvořte si veřejný repozitář na GitHub a propojte ho s lokálním repozitářem, tím co jste si zkopírovali. 
-Vypracujte **zadání programu**, zkuste v průbehu trackovat změny pomocí **git commit**. Po vypracování programu napište vlastní README dokument, který bude sloužit jako návod pro zprovoznění vašeho programu (zapojení, stažení souborů, upravení konfiguračního souboru, nahrání na RPI pico...), nezapomeňte na soubor .gitignore, jelikož se v programu nacházi **API klíč, který nesmí být zveřejněn!!**, případně ignoruje soubory generované vývojovým prostředím jako například .vscode . 
-Váš výsledek nahrajte do GitHub repozitáře.
-
-### Zadání programu
-Program bude zahrnovat práci s API a LCD displejem, konfigurační soubor  bude ukládat v libovolném formátu údaje pro přihlášení k WiFi a API klíč. Spouštěcí soubor pro program bude main.py, program zhotovte pro platformu raspberry pi pico w.
-
-Každých 10 minut zjišťujte aktuální počasí na aktuální lokaci pomocí API OpenWeatherMap. Klíč, který máte v clasroom  je omezen na 1000 za den, při testování ostatních částí programu si prosím zkopírujte ukázková JSON data z dokumentace. Aktuální geologickou lokaci si zjistěte pomocí veřejné IP adresy prostřednicvím [IP API](https://ip-api.com), toto API je zdarma a nevyžaduje klíč.
-
-Po zapnutí zařízení se ukáže "Connecting to WiFi", po připojení k síti se na displeji zobrazí na pár sekund aktuální souřadnice, poté bude displej ukazovat data o počasí, která vám přijdou vhodná. 
-
-Zařiďte základní robustnost programu jako automatické připojení k síti po výpadku, či upozornění na špatná data z API. 
-
-### Úprava programu
-Pomocí funkce fork na GitHub přidejte do kódu vaší dvojice funkcionalitu aktuálního času, na displej přidejte aktuální čas formátovaný HH:MM:SS synchronizovaného pomocí NTP, případně uvolněte pro tento údaj místo na displeji, poté využijte funkci contribute pro aktualizování repozitáře autora. Ověřte funkčnost.
-
-### Hodnocení
-Bude hodnoceno za 5 pouze při neplnění činosti na hodínách Dpr.
+Tento projekt je určen pro Raspberry Pi Pico W a jeho úkolem je zobrazovat aktuální počasí na LCD displeji. Program se po zapnutí připojí k WiFi síti a získá aktuální geografickou polohu zařízení pomocí veřejné IP adresy. Poté se každých 10 minut načítají data o počasí z OpenWeatherMap API a zobrazují se na displeji.
 
 
 
+Před spuštěním je potřeba vytvořit konfigurační soubor config.json, který obsahuje název WiFi sítě, heslo a API klíč pro OpenWeatherMap. Tento soubor není součástí GitHub repozitáře a je přidán do .gitignore, aby nedošlo k úniku citlivých údajů.
 
 
 
+Program po spuštění nejprve zobrazí hlášku „Connecting to WiFi“, následně po připojení krátce ukáže souřadnice zařízení a potom začne zobrazovat informace o počasí. Program je navržen tak, aby se automaticky znovu připojil k WiFi v případě výpadku a ošetřuje případné chybné odpovědi z API.
 
 
 
+Projekt byl rozšířen o zobrazení aktuálního času synchronizovaného přes NTP. Čas je zobrazen ve formátu HH:MM:SS a běží současně s informacemi o počasí na displeji.
 
 
 
+Struktura projektu je jednoduchá: hlavní soubor je main.py, konfigurace se ukládá do config.json, soubor .gitignore zajišťuje ochranu citlivých dat a README obsahuje instrukce pro instalaci a spuštění programu.
 
-### pozor
-v github máte tlačítko copilot, umí programovat lépe než chatgpt, tak alespoň využívejte ty správné nástroje.
+
+
+Projekt lze nahrát do Raspberry Pi Pico W pomocí MicroPythonu a prostředí Thonny. Po správném nastavení WiFi a API klíče program běží automaticky a zobrazuje počasí a čas na připojeném LCD displeji.
+
